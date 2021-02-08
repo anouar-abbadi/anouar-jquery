@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.5.1.js"></script>
+    <script>
+         $(document).ready(function() {
+
+            var string ="JavaScript";
+        var nombre=1;
+        var bol=true;
+        var voiture={marque:"toyota",type:"diesel"};
+        var x=[];
+        var y=[1,2,3,4,5,6,7,8,9,"A"];
+        $("#a").html(string+" "+nombre+" "+bol+" "+voiture.marque+" "+voiture.type);
+        for (var i = 0; i < y.length; i++) {
+             // Do something with x[i]
+             $("#q").append(" "+y[i]);
+        }
+
+        
+        $("#b").click(function(){
+            $("#s").text("hello function");
+        });
+    
+        });
+        
+
+    </script>
+</head>
+<body>
+    <div id="a"></div>
+    <div id="q"></div>
+    <div id="s"></div>
+    <button id="b">afficher</button>
+    
+</body>
+</html>
